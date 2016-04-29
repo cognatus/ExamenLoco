@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	p Tus amigos c:
+	br
+	each algo in amigos
+		p Nombre: #{algo._id}
+		p Algo de el: #{algo.some}
+		br

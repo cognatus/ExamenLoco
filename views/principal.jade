@@ -1,0 +1,20 @@
+extends layout
+
+block content
+	p Hola principal
+	br 
+	a( href="consulta" ) Ver amigos
+	br
+	a( href="morir" ) Morir(eliminar cuenta)
+	br
+	p quieres cambiar tu info?
+	form( action="modifica", method="POST" ) 
+		p Ingresa tus datos
+		br
+		p nombre nuevo
+		input( type="text", id="user", name="user" )
+		p Contrasenia nueva
+		input( type="password", id="pass", name="pass" )
+		p Algo de ti nuevo, no mucho porfa c:
+		input( type="text", id="pass", name="some" )
+		input( type="submit", value="Cambia Dude!" )
